@@ -1,0 +1,17 @@
+# This is a generated file; do not edit or check into version control.
+ffmpeg_kit_flutter=/Users/mac-3/.pub-cache/hosted/pub.dev/ffmpeg_kit_flutter-6.0.3/
+media_kit_libs_android_video=/Users/mac-3/.pub-cache/hosted/pub.dev/media_kit_libs_android_video-1.3.6/
+media_kit_libs_ios_video=/Users/mac-3/.pub-cache/hosted/pub.dev/media_kit_libs_ios_video-1.1.4/
+media_kit_libs_linux=/Users/mac-3/.pub-cache/hosted/pub.dev/media_kit_libs_linux-1.1.3/
+media_kit_libs_macos_video=/Users/mac-3/.pub-cache/hosted/pub.dev/media_kit_libs_macos_video-1.1.4/
+media_kit_libs_windows_video=/Users/mac-3/.pub-cache/hosted/pub.dev/media_kit_libs_windows_video-1.0.10/
+media_kit_native_event_loop=/Users/mac-3/.pub-cache/hosted/pub.dev/media_kit_native_event_loop-1.0.9/
+media_kit_video=/Users/mac-3/.pub-cache/hosted/pub.dev/media_kit_video-1.2.5/
+package_info_plus=/Users/mac-3/.pub-cache/hosted/pub.dev/package_info_plus-8.0.3/
+screen_brightness=/Users/mac-3/.pub-cache/hosted/pub.dev/screen_brightness-0.2.2+1/
+screen_brightness_android=/Users/mac-3/.pub-cache/hosted/pub.dev/screen_brightness_android-0.1.0+2/
+screen_brightness_ios=/Users/mac-3/.pub-cache/hosted/pub.dev/screen_brightness_ios-0.1.0/
+screen_brightness_macos=/Users/mac-3/.pub-cache/hosted/pub.dev/screen_brightness_macos-0.1.0+1/
+screen_brightness_windows=/Users/mac-3/.pub-cache/hosted/pub.dev/screen_brightness_windows-0.1.3/
+volume_controller=/Users/mac-3/.pub-cache/hosted/pub.dev/volume_controller-2.0.8/
+wakelock_plus=/Users/mac-3/.pub-cache/hosted/pub.dev/wakelock_plus-1.2.8/
