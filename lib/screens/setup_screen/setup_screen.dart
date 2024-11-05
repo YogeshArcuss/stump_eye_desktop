@@ -12,7 +12,6 @@ class SetupScreen extends StatefulWidget {
 }
 
 class _SetupScreenState extends State<SetupScreen> {
-  bool ffmpegPresent = false;
   ValueNotifier<FFMpegProgress> downloadProgress =
       ValueNotifier<FFMpegProgress>(
     FFMpegProgress(
@@ -30,15 +29,18 @@ class _SetupScreenState extends State<SetupScreen> {
           downloadProgress.value = progress;
         },
       );
-      setState(() {
-        ffmpegPresent = success;
-      });
+      if(success){
+  Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginScreen()),
+      );
+      }
+       
     }
   }
 
   Future<void> checkFFMpeg() async {
     bool present = await ffmpeg.isFFMpegPresent();
-    ffmpegPresent = present;
     if (present) {
       Navigator.push(
         context,
