@@ -14,6 +14,17 @@ class PlayerScreen extends StatefulWidget {
 class _PlayerScreenState extends State<PlayerScreen> {
   @override
   Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.blue, width: 2),
+        borderRadius: BorderRadius.circular(15), // Optional: rounded corners
+      ),
+      child: PlayerView(
+        url: widget.url,
+        // url:
+        //     "https://videos.pexels.com/video-files/2169880/2169880-uhd_2560_1440_30fps.mp4",
+      ),
+    );
     return LayoutBuilder(
       builder: (context, constraints) {
         return GridView.builder(
