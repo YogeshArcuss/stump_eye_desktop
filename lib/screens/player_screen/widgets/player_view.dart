@@ -48,8 +48,6 @@ class _PlayerViewState extends State<PlayerView> {
     // }).catchError((error) {
     //   debugPrint("error  $error");
     // });
-
-    // player.open(Media('rtsp://192.168.1.254/sjcam.mov'));
   }
 
   @override

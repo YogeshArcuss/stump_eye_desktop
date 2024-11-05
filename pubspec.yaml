@@ -37,7 +37,10 @@ dependencies:
   media_kit: ^1.1.11
   media_kit_video: ^1.2.5
   media_kit_libs_video: ^1.0.5
-  ffmpeg_kit_flutter: ^6.0.3
+  # ffmpeg_kit_flutter: ^6.0.3
+  window_manager: ^0.4.3
+  flutter_acrylic: ^1.1.4
+  ffmpeg_helper: ^1.0.1
 
 dev_dependencies:
   flutter_test:
