@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stump_eye/ffmpeg/stream_handler.dart';
 import 'package:stump_eye/screens/player_screen/player_screen.dart';
 import 'package:stump_eye/widgets/gradient_button.dart';
 import 'package:stump_eye/widgets/login_field.dart';
@@ -15,7 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
   TextEditingController urlController =
       TextEditingController(text: "rtsp://192.168.1.254/sjcam.mov");
 
-  void onPressLogin(BuildContext context) {
+  void onPressLogin(BuildContext context) async {
     var url = urlController.text;
     if (url.isEmpty) {
       const snackBar = SnackBar(
@@ -30,6 +31,11 @@ class _LoginScreenState extends State<LoginScreen> {
           backgroundColor: Colors.red);
 
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      return;
+    }
+    final isAlive = await StreamHandler().checkIsAliveOrNot(url);
+    debugPrint("isAlive $isAlive");
+    if (!isAlive) {
       return;
     }
     setState(() {

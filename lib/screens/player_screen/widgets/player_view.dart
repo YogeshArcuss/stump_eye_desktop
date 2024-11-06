@@ -15,7 +15,7 @@ class PlayerView extends StatefulWidget {
 
 class _PlayerViewState extends State<PlayerView> {
   late final player = Player(configuration: const PlayerConfiguration());
-  final steamHandler = const StreamHandler();
+  final steamHandler = StreamHandler();
   late final controller;
 
   @override
@@ -29,7 +29,12 @@ class _PlayerViewState extends State<PlayerView> {
         player.open(Media(widget.url));
       }
     });
+
     steamHandler.init(widget.url);
+    Future.delayed(Duration(minutes: 1), () {
+      debugPrint("completed Ended");
+      steamHandler.stop();
+    });
   }
 
   @override
